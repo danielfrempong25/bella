@@ -1,0 +1,109 @@
+/* src/components/Header.css */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar .links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.navbar .links li:hover :where(a, span) {
+  color: #19a463;
+}
+
+.navbar .links .language {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.navbar .links span {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.navbar .links .join a {
+  border: 1px solid #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.navbar .links .join a:hover {
+  color: #fff;
+  background: #19a463;
+  border-color: transparent;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url("../src/image/img.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  align-items: center;
+}
+
+.hero .search-field {
+  display: flex;
+  align-items: center;
+}
+
+.hero h2 {
+  font-size: 54px;
+  color: #fff;
+}
+
+.hero input {
+  width: 400px;
+  height: 40px;
+}
+
+.hero .search-field span {
+  color: white;
+  background: rgb(74, 215, 74);
+  padding: 13px 13px;
+}
+
+.hero .popular-tags {
+  color: #fff;
+}
+
+.hero .popular-tags ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.hero .popular-tags li a {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid floralwhite;
+  padding: 10px;
+  border-radius: 20px;
+}
